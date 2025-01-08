@@ -1,27 +1,17 @@
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from './pages/Home';
+import About from './pages/About';
+import Blog from './pages/Blog';
 
-import './App.css'
-
-function App() {
+export default function App() {
 
   return (
-    <>
-
-      <h1>Djasahn English</h1>
-      <h3>This site is currently under construction. For more information visit my <a href="https://www.linkedin.com/in/djasahn-english">LinkedIn</a></h3>
-      
-      <div className="pageButtons">
-        <button>
-          About
-        </button>
-        <button>
-          Blog
-        </button>
-        <button>
-          Projects
-        </button>
-      </div>
-    </>
-  )
+      <BrowserRouter>
+        <Routes>
+            <Route index element = {<Home/>} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
+        </BrowserRouter>
+  );
 }
-
-export default App
