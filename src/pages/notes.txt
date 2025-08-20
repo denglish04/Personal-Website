@@ -1,0 +1,35 @@
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from './pages/Home';
+import About from './pages/About';
+import Blog from './pages/Blog';
+
+<BrowserRouter>
+    <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
+    </Routes>
+</BrowserRouter>
+
+
+
+
+        <h2>Home Page</h2>
+        <button onClick={handleClickHome}> Home Page </button>
+        <button onClick={handleClickBlog}> Blog Page </button>
+        <button onClick={handleClickAbout}> About Page</button>
+
+
+       const navigate = useNavigate(); 
+
+    const handleClickHome = () => {
+        navigate('/Home');  // Navigate to About page using the navigate hook
+    };
+
+    const handleClickBlog = () => {
+        navigate('/blog');  // Navigate to Blog page using the navigate hook
+    };
+
+    const handleClickAbout = () => {
+        navigate('/About');  // Navigate to Home page using the navigate hook
+    };

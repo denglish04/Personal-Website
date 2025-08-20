@@ -1,11 +1,8 @@
 import Header from '../components/Header'
 import { useNavigate } from 'react-router-dom';
 
-
-
-export default function Home(){
- 
-    const navigate = useNavigate(); 
+export default function Projects(){
+    const navigate = useNavigate();
 
     const handleClickHome = () => {
         navigate('/');  // Navigate to About page using the navigate hook
@@ -16,24 +13,17 @@ export default function Home(){
     };
 
     const handleClickAbout = () => {
-        navigate('/about');  // Navigate to About page using the navigate hook
+	navigate('/about');
     };
-
-
-    const handleClickProjects = () => {
-        navigate('/projects');  // Navigate to About page using the navigate hook
-    };
-
 
     return(
         <>
-        <Header />
-            <h2>Home Page</h2>
+            <Header />
+            <h2>Projects</h2>
+            <p> Here are the personal projects I have selected as a part of my portfolio </p>
             <button onClick={handleClickHome}> Home Page </button>
             <button onClick={handleClickBlog}> Blog Page </button>
             <button onClick={handleClickAbout}> About Page </button>
-            <button onClick={handleClickProjects}> Projects Page </button>
-
 	    </>
-    );
+    )
 }
