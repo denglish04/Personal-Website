@@ -14,6 +14,7 @@ export default function App() {
 			<Route path="/about" element={<About />} />
 			<Route path="/blog" element={<Blog />} />
 			<Route path="/projects" element={<Projects />}/>
+			<Route path="/raycaster" element={<Raycaster />}/>
 		</Routes>
 		</BrowserRouter>
 	);

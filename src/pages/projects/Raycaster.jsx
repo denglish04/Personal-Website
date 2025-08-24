@@ -19,6 +19,8 @@ return(
 	    <a href="https://github.com/denglish04/raycasterDemo"> Click Here</a>
             <p> Here are the personal projects I have selected as a part of my portfolio </p>
             <button onClick={handleClickHome}> Home Page </button>
-        </>
+	    <button onClick={handleClickHome}> Home Page </button>
+
+	</>
     )
 }
