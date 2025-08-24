@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Projects from './pages/Projects';
+import Raycaster from './pages/projects/Raycaster';
 
 export default function App() {
 

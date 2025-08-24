@@ -16,6 +16,10 @@ export default function Projects(){
 	navigate('/about');
     };
 
+    const handleClickRaycaster = () => {
+	navigate('/raycaster');
+    }
+
     return(
         <>
             <Header />
@@ -24,6 +28,7 @@ export default function Projects(){
             <button onClick={handleClickHome}> Home Page </button>
             <button onClick={handleClickBlog}> Blog Page </button>
             <button onClick={handleClickAbout}> About Page </button>
+	    <button onClick={handleClickRaycaster}> Raycaster Project </button>
 	    </>
     )
 }
