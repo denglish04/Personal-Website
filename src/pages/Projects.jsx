@@ -25,10 +25,14 @@ export default function Projects(){
             <Header />
             <h2>Projects</h2>
             <p> Here are the personal projects I have selected as a part of my portfolio </p>
-            <button onClick={handleClickHome}> Home Page </button>
-            <button onClick={handleClickBlog}> Blog Page </button>
-            <button onClick={handleClickAbout}> About Page </button>
+            <div>
+	    	<button onClick={handleClickHome}> Home Page </button>
+            	<button onClick={handleClickBlog}> Blog Page </button>
+            	<button onClick={handleClickAbout}> About Page </button>
+	    </div>
+	    
 	    <button onClick={handleClickRaycaster}> Raycaster Project </button>
+	    
 	    </>
     )
 }
