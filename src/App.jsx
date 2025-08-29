@@ -4,7 +4,7 @@ import About from './pages/About';
 import Blog from './pages/Blog';
 import Projects from './pages/Projects';
 import Raycaster from './pages/projects/Raycaster';
-import MultiplayerDemo from './pages/projects/2DMultiplayerDemo';
+import MultiplayerDemo from './pages/projects/MultiplayerDemo';
 
 export default function App() {
 
