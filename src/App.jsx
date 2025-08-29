@@ -16,7 +16,7 @@ export default function App() {
 			<Route path="/blog" element={<Blog />} />
 			<Route path="/projects" element={<Projects />}/>
 			<Route path="/raycaster" element={<Raycaster />}/>
-			<Route path="/multiplayerdemo" element={<MultiplayerDemo>}/>
+			<Route path="/multiplayerdemo" element={<MultiplayerDemo/>}/>
 		</Routes>
 		</BrowserRouter>
 	);
