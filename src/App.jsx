@@ -4,6 +4,7 @@ import About from './pages/About';
 import Blog from './pages/Blog';
 import Projects from './pages/Projects';
 import Raycaster from './pages/projects/Raycaster';
+import 2DMultiplayerDemo from './pages/projects/2DMultiplayerDemo';
 
 export default function App() {
 
@@ -15,6 +16,7 @@ export default function App() {
 			<Route path="/blog" element={<Blog />} />
 			<Route path="/projects" element={<Projects />}/>
 			<Route path="/raycaster" element={<Raycaster />}/>
+			<Route path="/multiplayerdemo" element={<2DMultiplayerDemo>}/>
 		</Routes>
 		</BrowserRouter>
 	);

@@ -20,7 +20,10 @@ export default function Projects(){
 	navigate('/raycaster');
     }
 
-    return(
+    const handleClick2DMultiplayerDemo = () {
+	navigate('multiplayerdemo');
+    }
+return(
         <>
             <Header />
             <h2>Projects</h2>
@@ -32,7 +35,7 @@ export default function Projects(){
 	    </div>
 	    
 	    <button onClick={handleClickRaycaster}> Raycaster Project </button>
-	    
+	    <button onClick={handleClick2DMultiplayerDemo}> 2D Multiplayer Demo Project </button>
 	    </>
     )
 }
