@@ -20,7 +20,7 @@ export default function Projects(){
 	navigate('/raycaster');
     }
 
-    const handleClick2DMultiplayerDemo = () {
+    const handleClick2DMultiplayerDemo = () => {
 	navigate('multiplayerdemo');
     }
 return(
