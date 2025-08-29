@@ -21,7 +21,7 @@ export default function Projects(){
     }
 
     const handleClick2DMultiplayerDemo = () => {
-	navigate('multiplayerdemo');
+	navigate('/multiplayerdemo');
     }
 return(
         <>
