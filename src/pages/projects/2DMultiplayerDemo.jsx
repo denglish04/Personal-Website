@@ -1,7 +1,7 @@
 import Header from '../../components/Header'
 import { useNavigate } from 'react-router-dom';
 
-export default function Projects(){
+export default function MultiplayerDemo(){
     const navigate = useNavigate();
 
     const handleClickHome = () => {
