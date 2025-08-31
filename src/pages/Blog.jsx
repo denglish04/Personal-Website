@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import Button from "../components/Button"; 
 
 export default function Blog(){
 
@@ -33,13 +34,9 @@ export default function Blog(){
         <>
             <Header />
             <h2>Blog Page</h2>
-            <button onClick={handleClickHome}> Home Page </button>
-            <button onClick={handleClickAbout}> About Page </button>
-            <button onClick={handleClickProjects}> Projects Page </button>
-
 	    <div>
                 <input type="text" value={text} onChange={handleChange} placeholder = "Blog Topic Suggestions or Requests..."/>
-                <button onClick={handleSubmit}> Submit </button>
+                <Button onClick={handleSubmit}> Submit </Button>
             </div>
         </>
     )

@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import { useNavigate } from 'react-router-dom';
+import Button from "../components/Button"; 
 
 export default function About(){
     const navigate = useNavigate();
@@ -21,10 +22,6 @@ export default function About(){
             <Header />
             <h2>About Page</h2>
             <p>I am a driven computer science major and student athlete at Occidental College, passionate about combining technology with insights into human cognition. </p>
-            <button onClick={handleClickHome}> Home Page </button>
-            <button onClick={handleClickBlog}> Blog Page </button>
-            <button onClick={handleClickProjects}> Project Page </button>
-
         </>
     )
 }

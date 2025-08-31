@@ -1,39 +1,31 @@
-import Header from '../components/Header'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import Header from "../components/Header"; // adjust path as needed
+import Button from "../components/Button"; 
 
+export default function Home() {
+  const navigate = useNavigate();
 
+  const handleClickHome = () => {
+    navigate("/");
+  };
 
-export default function Home(){
- 
-    const navigate = useNavigate(); 
+  const handleClickBlog = () => {
+    navigate("/blog");
+  };
 
-    const handleClickHome = () => {
-        navigate('/');  // Navigate to About page using the navigate hook
-    };
+  const handleClickAbout = () => {
+    navigate("/about");
+  };
 
-    const handleClickBlog = () => {
-        navigate('/blog');  // Navigate to About page using the navigate hook
-    };
+  const handleClickProjects = () => {
+    navigate("/projects");
+  };
 
-    const handleClickAbout = () => {
-        navigate('/about');  // Navigate to About page using the navigate hook
-    };
-
-
-    const handleClickProjects = () => {
-        navigate('/projects');  // Navigate to About page using the navigate hook
-    };
-
-
-    return(
-        <>
-        <Header />
-            <h2>Home Page</h2>
-            <button onClick={handleClickHome}> Home Page </button>
-            <button onClick={handleClickBlog}> Blog Page </button>
-            <button onClick={handleClickAbout}> About Page </button>
-            <button onClick={handleClickProjects}> Projects Page </button>
-
-	    </>
-    );
+  return (
+    <>
+      <Header />
+      <h2>Home Page</h2>
+   </>
+  );
 }
+

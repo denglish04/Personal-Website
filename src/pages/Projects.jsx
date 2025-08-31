@@ -1,5 +1,7 @@
 import Header from '../components/Header'
 import { useNavigate } from 'react-router-dom';
+import Button from "../components/Button"; 
+import { Outlet } from "react-router-dom"; 
 
 export default function Projects(){
     const navigate = useNavigate();
@@ -17,25 +19,20 @@ export default function Projects(){
     };
 
     const handleClickRaycaster = () => {
-	navigate('/raycaster');
+	navigate('/projects/raycaster');
     }
 
     const handleClick2DMultiplayerDemo = () => {
-	navigate('/multiplayerdemo');
+	navigate('/projects/multiplayerdemo');
     }
 return(
         <>
             <Header />
             <h2>Projects</h2>
             <p> Here are the personal projects I have selected as a part of my portfolio </p>
-            <div>
-	    	<button onClick={handleClickHome}> Home Page </button>
-            	<button onClick={handleClickBlog}> Blog Page </button>
-            	<button onClick={handleClickAbout}> About Page </button>
-	    </div>
-	    
-	    <button onClick={handleClickRaycaster}> Raycaster Project </button>
-	    <button onClick={handleClick2DMultiplayerDemo}> 2D Multiplayer Demo Project </button>
+      
+	    <Button onClick={handleClickRaycaster}> Raycaster Project </Button>
+	    <Button onClick={handleClick2DMultiplayerDemo}> 2D Multiplayer Demo Project </Button>
 	    </>
     )
 }
