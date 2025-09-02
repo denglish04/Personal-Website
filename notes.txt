@@ -1,0 +1,33 @@
+UI Colors 
+
+DarkMode 
+--bg-dark: oklch(0.1 0.1 272);
+--bg: oklch(0.15 0.1 272);
+--bg-light: oklch(0.2 0.1 272);
+--text: oklch(0.96 0.1 272);
+--text-muted: oklch(0.76 0.1 272);
+--highlight: oklch(0.5 0.2 272);
+--border: oklch(0.4 0.2 272);
+--border-muted: oklch(0.3 0.2 272);
+--primary: oklch(0.76 0.2 272);
+--secondary: oklch(0.76 0.2 92);
+--danger: oklch(0.7 0.2 30);
+--warning: oklch(0.7 0.2 100);
+--success: oklch(0.7 0.2 160);
+--info: oklch(0.7 0.2 260);
+
+LightMode 
+--bg-dark: oklch(0.92 0.1 272);
+--bg: oklch(0.96 0.1 272);
+--bg-light: oklch(1 0.1 272);
+--text: oklch(0.15 0.2 272);
+--text-muted: oklch(0.4 0.2 272);
+--highlight: oklch(1 0.2 272);
+--border: oklch(0.6 0.2 272);
+--border-muted: oklch(0.7 0.2 272);
+--primary: oklch(0.4 0.2 272);
+--secondary: oklch(0.4 0.2 92);
+--danger: oklch(0.5 0.2 30);
+--warning: oklch(0.5 0.2 100);
+--success: oklch(0.5 0.2 160);
+--info: oklch(0.5 0.2 260);

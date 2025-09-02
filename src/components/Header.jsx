@@ -31,7 +31,7 @@ export default function Header() {
 
 
 return (
-		<header className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white text-center py-10 rounded-b-2xl shadow-lg">
+		<header className="bg-gradient-to-r from-[oklch(0.1_0.1_272)] to-[oklch(0.15_0.1_272)] text-white text-center py-10 rounded-b-2xl shadow-lg">
 		<h1 className="text-4xl font-bold mb-2">Djasahn English</h1>
 		<h3 className="text-lg opacity-90">
 		🚧 This page is under construction. For contact info visit{" "}
