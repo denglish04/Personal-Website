@@ -2,6 +2,8 @@ import Header from '../components/Header'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Button from "../components/Button"; 
+import Layout from "../components/Layout";
+
 
 export default function Blog(){
 
@@ -32,12 +34,13 @@ export default function Blog(){
 
     return(
         <>
-            <Header />
-            <h2>Blog Page</h2>
-	    <div>
-                <input type="text" value={text} onChange={handleChange} placeholder = "Blog Topic Suggestions or Requests..."/>
-                <Button onClick={handleSubmit}> Submit </Button>
-            </div>
+        <Layout>
+        <h2>Blog Page</h2>
+        <div>
+        <input type="text" value={text} onChange={handleChange} placeholder = "Blog Topic Suggestions or Requests..."/>
+        <Button onClick={handleSubmit}> Submit </Button>
+        </div>
+        </Layout>
         </>
     )
 }

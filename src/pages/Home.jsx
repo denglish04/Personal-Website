@@ -2,6 +2,10 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/Header"; // adjust path as needed
 import Button from "../components/Button"; 
 import Card from "../components/Card";
+import Footer from "../components/Footer";
+import Layout from "../components/Layout";
+
+
 
 export default function Home() {
     const navigate = useNavigate();
@@ -24,7 +28,7 @@ export default function Home() {
 
     return (
         <>
-        <Header />
+        <Layout>
         <h2>Hi, I’m Djasahn — Computer Science student, builder, and researcher.
 I design and develop software with an eye for detail, adaptability, and real-world problem solving. My background blends technical programming, cognitive science research, and leadership experience across athletics and student organizations.</h2>
 
@@ -36,6 +40,7 @@ I design and develop software with an eye for detail, adaptability, and real-wor
                 <Button onClick={handleClickProjects}> Projects Page </Button>
             </Card>
         </div>
+        </Layout>
         </>
     );
 }

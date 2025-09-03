@@ -1,8 +1,10 @@
-import Header from '../components/Header'
 import { useNavigate } from 'react-router-dom';
 import Button from "../components/Button"; 
 import { Outlet } from "react-router-dom"; 
 import Card from "../components/Card";
+import Layout from "../components/Layout";
+
+
 export default function Projects(){
     const navigate = useNavigate();
 
@@ -27,7 +29,7 @@ export default function Projects(){
     }
 return(
     <>
-    <Header />
+    <Layout>
     <h2>Projects</h2>
     <p> Here are the personal projects I have selected as a part of my portfolio </p>
     <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 flex justify-center">
@@ -38,6 +40,7 @@ return(
             <Button onClick={handleClickRaycaster}> Raycaster Project </Button>
         </Card>
     </div>
+    </Layout>
     </>
 );
 }
