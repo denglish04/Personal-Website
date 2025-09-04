@@ -19,7 +19,7 @@ return(
             <h2>Raycaster</h2>
 	    <p> this is the raycaster project, see more at this repo:</p>
 	    <a href="https://github.com/denglish04/raycasterDemo"> Click Here</a>
-	    <video src={myVideo} controls autoPlay={true} loop muted classname="rounded-xl shadow-lg w-[600px]"/>
+	    <video src={myVideo} controls autoPlay={true} loop muted playsInline classname="rounded-xl shadow-lg w-[600px]"/>
 	</>
     )
 }
