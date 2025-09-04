@@ -1,4 +1,4 @@
-export default function Card({ title, description, children }) {
+export default function Card({ title, description, children, className=""}) {
     return (
 
         <div className="flex flex-col justify-between align-items text-center rounded-2xl shadow-md p-4 bg-white hover:shadow-lg transition h-full">

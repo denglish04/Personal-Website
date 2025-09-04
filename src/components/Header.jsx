@@ -23,6 +23,10 @@ export default function Header() {
     navigate("/projects");
   };
 
+  const handleClickSkills = () => {
+    navigate("/skills");
+  }
+
 
 
 
@@ -38,6 +42,7 @@ return (
 		    <Button onClick={handleClickBlog}> Blog Page </Button>
 		    <Button onClick={handleClickAbout}> About Me </Button>
 		    <Button onClick={handleClickProjects}> Projects Page </Button>
+            <Button onClick={handleClickSkills}> Skills </Button>
         </div>
 		</header>
 	);

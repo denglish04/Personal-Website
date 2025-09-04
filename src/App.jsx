@@ -7,6 +7,7 @@ import Blog from './pages/Blog';
 import Projects from './pages/Projects';
 import Raycaster from './pages/projects/Raycaster';
 import MultiplayerDemo from './pages/projects/MultiplayerDemo';
+import Skills from './pages/Skills';
 export default function App() {
 
 	return (
@@ -15,7 +16,7 @@ export default function App() {
 			<Route index element = {<Home/>} />
 			<Route path="/about" element={<About />} />
 			<Route path="/blog" element={<Blog />} />
-
+            <Route path="/skills" element={<Skills/>}/>
 			<Route path="/projects" element={<Projects />}/>
 			<Route path="/projects/raycaster" element={<Raycaster />}/>
 			<Route path="/projects/multiplayerdemo" element={<MultiplayerDemo/>}/>
