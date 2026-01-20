@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from './components/Header';
 import Home from './pages/Home';
-import About from './pages/About';
 import Blog from './pages/Blog';
 import Projects from './pages/Projects';
 import Raycaster from './pages/projects/Raycaster';
@@ -14,7 +13,6 @@ export default function App() {
 		<BrowserRouter>
 		<Routes>
 			<Route index element = {<Home/>} />
-			<Route path="/about" element={<About />} />
 			<Route path="/blog" element={<Blog />} />
             <Route path="/skills" element={<Skills/>}/>
 			<Route path="/projects" element={<Projects />}/>
