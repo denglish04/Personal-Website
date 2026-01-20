@@ -4,7 +4,7 @@ import Card from "../components/Card";
 import AboutCard from "../components/AboutCard";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
-import SkillComponent from "../components/SkillComponent";
+import SkillComponent from "../components/skillComponent";
 
 export default function Home() {
     const navigate = useNavigate();
