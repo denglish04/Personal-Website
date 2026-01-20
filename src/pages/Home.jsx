@@ -42,8 +42,8 @@ export default function Home() {
 	    	</div>
                 <div className="flex justify-center md:col-span-2">
 	    	<Card title="Skills & Technologies" description = {"If you're curious about what I'm good at check out the Skills page for a list of technologies, languages, tools, and libraries that Stack-Overflow and I are comfortable with. Or, if you just want to here me talk about what I'm working on check out the Blog page"}>
-                <div className="grid grid-cols-6 justify-center gap-3">
-	    		<SkillComponent imgPath="../../public/icons/python.svg" title="Python" link="https://www.python.org/">
+                <div className="grid grid-cols-4 justify-center gap-3">
+	    		<SkillComponent imgPath="icons/python.svg" title="Python" link="https://www.python.org/">
 	    		</SkillComponent>
 	    		<SkillComponent imgPath="icons/pytorch-icon.svg" title="Pytorch" link="https://pytorch.org/">
 	    		</SkillComponent>
