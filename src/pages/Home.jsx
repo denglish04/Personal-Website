@@ -5,6 +5,8 @@ import AboutCard from "../components/AboutCard";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import SkillComponent from "../components/skillComponent";
+import ProjectComponent from "../components/ProjectComponent";
+
 
 export default function Home() {
     const navigate = useNavigate();
@@ -33,8 +35,8 @@ export default function Home() {
                     <div className="flex justify-center md:col-span-2">
                         <AboutCard 
                             title="About Me" 
-                            description1="Welcome! I’m a computer scientist studying as a junior at Occidental College in Pasadena, CA. I consider Chicago home but I’m originally from Philadelphia so it will always be “Fly Eagles Fly!” I'm currently working on my comps and pursuing a computational mathematics theme associated with my major. This theme is concentrated on leveraging graph neural networks as a Network Intrusion Detection System (NIDS); to analyze, stress-test, and visualize the structure and dynamics of cyber systems and infrastructure. My background blends technical programming and leadership experience across athletics and student organizations."
-                            description2="This site serves as a hub for the things I know, am learning, or working on, with links to documentation and resources I frequently use. I also share thoughts on various topics through my blog. My background combines technical programming skills with leadership experience in athletics and student organizations. The goal of this content is to hone my own abilities and serve as outreach for professional and collaborative opportunities in the field."
+                            description1="Welcome! I’m a computer scientist studying as a junior at Occidental College in Los Angeles, CA. I consider Chicago home but I’m originally from Philadelphia so it will always be “Fly Eagles Fly!” I'm currently working on my comps and pursuing a computational mathematics theme associated with my major. This theme is concentrated on leveraging graph neural networks (GNNs) for Network Intrusion Detection Systems (NIDS); to analyze, stress-test, and visualize the structure and dynamics of cyber infrastructure."
+                            description2=" My background blends technical programming and leadership experience across athletics and student organizations. This site serves as a hub for the things I know, am learning, or working on, with links to documentation and resources I frequently use. I also share thoughts on various topics through my blog. The goal of this content is to hone my own abilities and serve as outreach for professional and collaborative opportunities in the field."
                         >
                             {/* Resume Link inside AboutCard */}
 	    		<div className="flex justify-center">
@@ -61,7 +63,6 @@ export default function Home() {
                         </AboutCard>
                     </div>
                 </div>
-g
                 {/* Skills & Technologies Section */}
                 <div className="flex justify-center md:col-span-2">
                     <Card 
@@ -100,9 +101,20 @@ g
                 {/* Portfolio Section */}
                 <div className="flex justify-center md:col-span-2">
                     <Card title="Portfolio" description="Explore my portfolio of software, web apps, and creative experiments.">
-                        <Button onClick={handleClickProjects}> Projects Page </Button>
+	    		<ProjectComponent  imgPath="icons/minimobile.png" title="Oxy Theater Department Mini Mobile Shop" link="/projects/minimobileshop" description="A rental management platform designed in collaboration with and actively used by the Occidental College Theater Department. The app simplifies the process of requesting and organizing mobile theater equipment for students and staff, combining a responsive Next.js frontend with Supabase-backed authentication, storage, and database services."/>
+                        <ProjectComponent  imgPath="icons/raycaster.png" title="2D to 3D Raycaster Simulation" link="/projects/raycaster" description="A low-level graphics project exploring the origins of 3D game development. Using C++ and OpenGL, the engine raycasts from a 2D grid-based world to produce both a top-down visualization and a real-time 3D projection, illustrating how early engines converted simple 2D maps into immersive 3D environments."/>
+			<ProjectComponent  imgPath="icons/multiplayer.png" title="Web Socket Demo" link="/projects/multiplayerdemo" description="A lightweight multiplayer experiment showcasing real-time communication over WebSockets. Multiple connected users can independently control objects in a shared environment, with Socket.IO handling low-latency state synchronization between clients."/>
+
                     </Card>
                 </div>
+
+                {/* Blog Section */}
+                <div className="flex justify-center md:col-span-2">
+                    <Card title="Blog" description="Explore my portfolio of software, web apps, and creative experiments.">
+		    </Card>
+                </div>
+
+
             </Layout>
         </>
     );
