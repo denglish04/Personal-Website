@@ -7,6 +7,8 @@ import Projects from './pages/Projects';
 import Raycaster from './pages/projects/Raycaster';
 import MultiplayerDemo from './pages/projects/MultiplayerDemo';
 import Skills from './pages/Skills';
+import MiniMobileShop from './pages/projects/MiniMobileShop';
+
 export default function App() {
 
 	return (
@@ -18,7 +20,8 @@ export default function App() {
 			<Route path="/projects" element={<Projects />}/>
 			<Route path="/projects/raycaster" element={<Raycaster />}/>
 			<Route path="/projects/multiplayerdemo" element={<MultiplayerDemo/>}/>
-		</Routes>
+		    <Route path="/projects/minimobileshop" element={<MiniMobileShop/>}/>
+        </Routes>
 		</BrowserRouter>
 	);
 }
