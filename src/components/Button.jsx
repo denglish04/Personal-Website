@@ -1,16 +1,27 @@
-export default function Button({children, onClick, color = "blue"}){
+export default function Button({ children, onClick, color = "blue" }) {
   const base =
-    "px-4 py-2 rounded-lg text-white transition font-medium shadow-sm";
+    "relative bg-transparent px-1 py-1 font-medium text-black transition";
+
+  const underline =
+    "after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-full " +
+    "after:-translate-x-1/2 after:scale-x-0 after:origin-center " +
+    "after:transition-transform after:duration-300 after:content-[''] " +
+    "hover:after:scale-x-100";
+
   const colors = {
-    blue: "bg-[oklch(0.76_0.2_272)] hover:bg-[oklch(0.76_0.2_92)]",
-    green: "bg-green-500 hover:bg-green-600",
-    purple: "bg-purple-500 hover:bg-purple-600",
-    orange: "bg-orange-500 hover:bg-orange-600",
+    blue: "after:bg-[oklch(0.76_0.2_272)]",
+    green: "after:bg-green-500",
+    purple: "after:bg-purple-500",
+    orange: "after:bg-orange-500",
   };
 
   return (
-    <button onClick={onClick} className={`${base} ${colors[color]}`}>
+    <button
+      onClick={onClick}
+      className={`${base} ${underline} ${colors[color]}`}
+    >
       {children}
     </button>
   );
 }
+
