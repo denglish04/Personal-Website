@@ -8,6 +8,7 @@ import Raycaster from './pages/projects/Raycaster';
 import MultiplayerDemo from './pages/projects/MultiplayerDemo';
 import Skills from './pages/Skills';
 import MiniMobileShop from './pages/projects/MiniMobileShop';
+import Comps from './pages/Comps';
 
 export default function App() {
 
@@ -18,7 +19,8 @@ export default function App() {
 			<Route path="/blog" element={<Blog />} />
             <Route path="/skills" element={<Skills/>}/>
 			<Route path="/projects" element={<Projects />}/>
-			<Route path="/projects/raycaster" element={<Raycaster />}/>
+			<Route path="/comps" element={<Comps/>}/>
+            <Route path="/projects/raycaster" element={<Raycaster />}/>
 			<Route path="/projects/multiplayerdemo" element={<MultiplayerDemo/>}/>
 		    <Route path="/projects/minimobileshop" element={<MiniMobileShop/>}/>
         </Routes>
