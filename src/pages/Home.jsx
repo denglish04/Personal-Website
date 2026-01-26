@@ -50,7 +50,7 @@ export default function Home() {
                                     Resume
                                 </a>
 	    			<a
-                                    href="/Comps"
+                                    href="/comps"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-sm underline"
