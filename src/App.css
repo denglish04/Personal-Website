@@ -9,3 +9,15 @@
   max-width: none;
 }
 
+@keyframes nameCycle {
+  0%, 100% { color: #f97316; } /* orange */
+  33% { color: #000000; }      /* black */
+  66% { color: #ef4444; }      /* red */
+}
+
+.animate-nameCycle {
+  display: inline-block;
+  animation: nameCycle 3s infinite linear;
+  will-change: color;
+}
+
